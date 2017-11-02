@@ -1,17 +1,13 @@
 
 
 	$('#rock').click(function(){
-	 		userChoice = `Rock`
+	 		userChoice = `Rock`;
 
 	 		game(`Rock`)
 	});
 
-	$(`#rock`).toggle(function(){
- 			$(this).animate({width:200},200);
- 		};
-
 	$('#paper').click(function(){
-		 userChoice = `Paper`
+		 userChoice = `Paper`;
 
 		 game(`Paper`)
 	});
@@ -68,3 +64,6 @@ $('.image').click(function(){
 	$('#answer').html(`${winner}`);
 });
 
+// $('img').click(function(){
+// 	$(this).css('background-color','blue');
+// });
