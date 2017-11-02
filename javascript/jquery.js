@@ -29,6 +29,9 @@
 	 	});
 
 
+var compScore = 0;
+var userScore = 0;
+
 function game(userChoice){
 
 		computerChoice = Math.random()
@@ -47,22 +50,22 @@ if (userChoice == computerChoice){
 				winner = (`It's a tie.`);
 		} else if  (userChoice ==`Rock`) {
 		  	if (computerChoice == `Scissors`){
-						winner = (`You win!`);
+						winner = (`You win!`); userScore = userScore+1
 				}else {
-						winner = (`Computer wins.`);
+						winner = (`Computer wins.`); compScore = compScore+1
 		};	
 	 } else if  (userChoice == `Paper`){	 	
 	 			if (computerChoice == `Rock`){
-						winner = (`You win!`);
+						winner = (`You win!`);  userScore = userScore+1
 		 	} else {
-		 				winner = (`Computer wins.`);
+		 				winner = (`Computer wins.`); compScore = compScore+1
 		 	};
 	
 	 } else if (userChoice == `Scissors`){
 	 			if (computerChoice == 'Paper'){
-	 				winner = (`You win!`);
+	 				winner = (`You win!`);  userScore = userScore+1
 	 			} else {
-	 				winner = (`Computer wins.`);
+	 				winner = (`Computer wins.`); compScore = compScore+1
 	 			};
  		};	  
 
@@ -72,6 +75,12 @@ $('.image').click(function(){
 	$('#answer').html(`${winner}`);
 });
 
-// $('img').click(function(){
-// 	$(this).css('background-color','blue');
-// });
+$('.image').click(function(){
+	$('#compScore').html(`${compScore}`);
+});
+
+$('.image').click(function(){
+	$('#userScore').html(`${userScore}`);
+});
+
+

@@ -1,7 +1,7 @@
 
-#Footer{
-	width:100%;
-	height: 150px;
+
+#footer{
+	height:400px;
 
 }
 
@@ -10,21 +10,19 @@
 }
 
 #answer{
-	padding-top: 50px;
+
 }
 
 .container{
 	height: 275px;
+	padding-top: 25px;
+	background-color: white;
+	width:100%;
 }
-.img-center{
+.score{
+	text-align: center;
+}
 
-}
-.img-right{
-
-}
-.img-left{
-
-}
 h1, h2, h3, h4, h5, p {
 	font-family: Helvetica, Arial, sans-serif;
 	text-align: center;
