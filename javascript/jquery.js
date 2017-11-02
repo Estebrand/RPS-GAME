@@ -2,12 +2,13 @@
 
 	$('#rock').click(function(){
 	 		userChoice = `Rock`
-	 		// $(this).toggle('slow', function(){
-	 		// 		(this).css(width , 200px)
-	 		// 	};
 
 	 		game(`Rock`)
 	});
+
+	$(`#rock`).toggle(function(){
+ 			$(this).animate({width:200},200);
+ 		};
 
 	$('#paper').click(function(){
 		 userChoice = `Paper`
