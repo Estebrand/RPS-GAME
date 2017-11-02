@@ -13,6 +13,9 @@
 	padding-top: 50px;
 }
 
+.container{
+	height: 275px;
+}
 .img-center{
 	margin:0 auto;
 }
@@ -36,4 +39,12 @@ img{
 	margin-left:auto;
 	margin-right: auto;
 
+}
+
+.toggleOn{
+	width:200px;
+}
+
+.toggleOff{
+	display: block;
 }

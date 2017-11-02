@@ -2,23 +2,31 @@
 
 	$('#rock').click(function(){
 	 		userChoice = `Rock`;
-
-	 		game(`Rock`)
+	 		game(`Rock`)	 		
 	});
+	
+	$(`#rock`).hover(function(){
+	 		$(`#rock`).toggleClass(`toggleOn`);
+
+	 	});
 
 	$('#paper').click(function(){
 		 userChoice = `Paper`;
 
 		 game(`Paper`)
 	});
+	$(`#paper`).hover(function(){
+	 		$(`#paper`).toggleClass(`toggleOn`);
 
-
+	 	});
 	$(`#scissors`).click(function(){
 		 userChoice = `Scissors`;
 
 		game(`Scissors`)
 	});
-
+	$(`#scissors`).hover(function(){
+	 		$(`#scissors`).toggleClass(`toggleOn`);
+	 	});
 
 
 function game(userChoice){
@@ -39,22 +47,22 @@ if (userChoice == computerChoice){
 				winner = (`It's a tie.`);
 		} else if  (userChoice ==`Rock`) {
 		  	if (computerChoice == `Scissors`){
-						winner = (`You win.`);
+						winner = (`You win!`);
 				}else {
-						winner = (`Computer wins`);
+						winner = (`Computer wins.`);
 		};	
 	 } else if  (userChoice == `Paper`){	 	
 	 			if (computerChoice == `Rock`){
-						winner = (`You win.`);
+						winner = (`You win!`);
 		 	} else {
-		 				winner = (`Computer wins`);
+		 				winner = (`Computer wins.`);
 		 	};
 	
 	 } else if (userChoice == `Scissors`){
 	 			if (computerChoice == 'Paper'){
-	 				winner = (`You win`);
+	 				winner = (`You win!`);
 	 			} else {
-	 				winner = (`Computer wins`);
+	 				winner = (`Computer wins.`);
 	 			};
  		};	  
 
